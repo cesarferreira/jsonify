@@ -1,0 +1,14 @@
+apply plugin: 'java'
+
+//noinspection GroovyUnusedAssignment
+sourceCompatibility = 1.7
+//noinspection GroovyUnusedAssignment
+targetCompatibility = 1.7
+
+configurations {
+    provided
+}
+
+dependencies {
+    compile 'com.google.code.gson:gson:2.3.1'
+}
