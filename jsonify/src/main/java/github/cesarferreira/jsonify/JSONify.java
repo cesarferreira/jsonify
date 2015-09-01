@@ -3,14 +3,20 @@ package github.cesarferreira.jsonify;
 import com.google.gson.Gson;
 
 public class JSONify {
+
+    private static final int BUMP = 4;
+
     public static String from(Object o) {
-        Gson g = new Gson();
-        return g.toJson(o);
+        return from(o, false);
     }
 
-    public static String frome(Object o) {
+    public static String from(Object o, boolean printFormatted) {
         Gson g = new Gson();
         String json = g.toJson(o);
+
+        if (!printFormatted) {
+            return json;
+        }
 
         String reconstruction = "";
 
@@ -20,12 +26,12 @@ public class JSONify {
             String current = String.valueOf(json.charAt(i));
 
             if (current.equals("{") || current.equals("[")) {
-                level += 2;
+                level += BUMP;
                 current = current + "\n" + getSpaces(level);
             }
 
             if (current.equals("}") || current.equals("]")) {
-                level -= 2;
+                level -= BUMP;
                 current = "\n" + getSpaces(level) + current;
             }
 
@@ -36,7 +42,7 @@ public class JSONify {
             reconstruction += current;
 
         }
-        reconstruction = reconstruction.replace("\":","\" : ");
+        reconstruction = reconstruction.replace("\":", "\" : ");
 
 
         return reconstruction;

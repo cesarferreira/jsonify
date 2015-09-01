@@ -3,9 +3,91 @@ package github.cesarferreira.jsonify.sample.models;
 import com.google.gson.annotations.SerializedName;
 
 
-    /**
-     * Created with cesarferreira/j2j
-     */
+/**
+ * Created with cesarferreira/j2j
+ */
+
+/**
+ * Created with cesarferreira/j2j
+ */
+public class Person {
+
+    private Long id;
+    @SerializedName("full_name")
+    private String fullName;
+    @SerializedName("family_name")
+    private String familyName;
+    private String password;
+    private String status;
+    private String gender;
+    private Contact contact;
+    private Location location;
+
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getFullName() {
+        return fullName;
+    }
+
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
+
+    public String getFamilyName() {
+        return familyName;
+    }
+
+    public void setFamilyName(String familyName) {
+        this.familyName = familyName;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public Contact getContact() {
+        return contact;
+    }
+
+    public void setContact(Contact contact) {
+        this.contact = contact;
+    }
+
+    public Location getLocation() {
+        return location;
+    }
+
+    public void setLocation(Location location) {
+        this.location = location;
+    }
+
     public static class Location {
 
         private String street;
@@ -52,88 +134,6 @@ import com.google.gson.annotations.SerializedName;
 
     }
 
-    /**
-     * Created with cesarferreira/j2j
-     */
-    public  class Person {
-
-        private Long id;
-        @SerializedName("full_name")
-        private String fullName;
-        @SerializedName("family_name")
-        private String familyName;
-        private String password;
-        private String status;
-        private String gender;
-        private Contact contact;
-        private Location location;
-
-
-        public Long getId() {
-            return id;
-        }
-
-        public void setId(Long id) {
-            this.id = id;
-        }
-
-        public String getFullName() {
-            return fullName;
-        }
-
-        public void setFullName(String fullName) {
-            this.fullName = fullName;
-        }
-
-        public String getFamilyName() {
-            return familyName;
-        }
-
-        public void setFamilyName(String familyName) {
-            this.familyName = familyName;
-        }
-
-        public String getPassword() {
-            return password;
-        }
-
-        public void setPassword(String password) {
-            this.password = password;
-        }
-
-        public String getStatus() {
-            return status;
-        }
-
-        public void setStatus(String status) {
-            this.status = status;
-        }
-
-        public String getGender() {
-            return gender;
-        }
-
-        public void setGender(String gender) {
-            this.gender = gender;
-        }
-
-        public Contact getContact() {
-            return contact;
-        }
-
-        public void setContact(Contact contact) {
-            this.contact = contact;
-        }
-
-        public Location getLocation() {
-            return location;
-        }
-
-        public void setLocation(Location location) {
-            this.location = location;
-        }
-
-    }
 
     /**
      * Created with cesarferreira/j2j
@@ -157,4 +157,5 @@ import com.google.gson.annotations.SerializedName;
             this.email = email;
         }
     }
+
 }

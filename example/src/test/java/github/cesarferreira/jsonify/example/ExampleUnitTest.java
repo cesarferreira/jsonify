@@ -1,4 +1,4 @@
-package github.cesarferreira.jsonify;
+package github.cesarferreira.jsonify.example;
 
 import org.junit.Test;
 
