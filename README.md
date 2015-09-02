@@ -1,5 +1,5 @@
 # jsonify
-Android - Convert any **java object** into **json** for **simpler debugging**
+Aren't you tired of using breakpoints and expanding all the properties to see a complete object?
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/cesarferreira/jsonify/master/extras/screenshot.png" width="100%" />
