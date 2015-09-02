@@ -1,7 +1,10 @@
 # jsonify
 Android - Convert any **java object** into **json** for **simpler debugging**
 
------------------------------------------
+<p align="center">
+<img src="https://raw.githubusercontent.com/cesarferreira/jsonify/master/extras/screenshot.png" width="100%" />
+</p>
+
 
 ## Usage
 
@@ -15,9 +18,6 @@ Contact contact = new Contact(new EmailAddress("yolo@gmail.com");
 person.setContact(contact, "919191919191"));
 person.setLocation(new Location("Lisbon", "Texas"));
 ```
-
-With this:
-> JSONify(person)
 
 into this:
 ```json
@@ -37,6 +37,9 @@ into this:
   "password": "yoloswag69"
 }
 ```
+
+With just this:
+> JSONify.from(person)
 
 
 ## Install

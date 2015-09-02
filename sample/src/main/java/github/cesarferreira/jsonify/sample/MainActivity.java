@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 setResultText(JSONify.from(Factory.createDummyPerson(), true));
+                JSONify.print(Factory.createDummyPerson());
             }
         });
 
@@ -36,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     private void setResultText(String text) {
         textView.setText("");
         textView.setText(text);
-        Log.d("tag", text);
+        //Log.d("tag", text);
     }
 
 }

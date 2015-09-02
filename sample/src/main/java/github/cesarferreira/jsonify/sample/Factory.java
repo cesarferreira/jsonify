@@ -7,11 +7,11 @@ public class Factory {
 
     public static Person createDummyPerson() {
         Person person = new Person();
-        person.setFullName("César Ferreira");
+        person.setFullName("Cesar Ferreira");
         person.setGender("male");
-        person.setPassword("yoloswag69");
+        person.setPassword("#yoloswag69");
         person.setContact(new Person.Contact(new Person.EmailAddress("yolo@gmail.com"), "919191919191"));
-        person.setLocation(new Person.Location("Lisbon", "Texas"));
+        person.setLocation(new Person.Location("Austin", "Texas"));
         return person;
     }
 }
