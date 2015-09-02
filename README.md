@@ -47,7 +47,7 @@ With just this:
 Add the dependency in the form:
 ```groovy
 dependencies {
-  compile 'com.cesarferreira.jsonify:jsonify:0.1.0'
+  compile 'com.cesarferreira.jsonify:jsonify:+'
 }
 ```
 
